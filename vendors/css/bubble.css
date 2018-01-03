@@ -111,6 +111,9 @@
 	z-index:999;
 	opacity: 0.5;
 }
+.arrow-before {
+	background-color: red;
+}
 .popuptext {
 	display: none;
 	width: 100%;
