@@ -66,13 +66,14 @@ nav {
 	
 }
 .config ul li {
-		display: inline-block;
-		border: 1px solid #ccc;	
-		border-radius: 5px;
-		margin-left: 0px;
-		margin-right: 15px;		
-		line-height: 30px;
-		padding: 0 10px;
+	display: inline-block;
+	border: 1px solid pink;	
+	border-radius: 5px;
+	margin-left: 0px;
+	margin-right: 15px;		
+	line-height: 30px;
+	padding: 0 10px;
+	background-color: pink;
 }
 #account-mobile {
 	position: fixed;
