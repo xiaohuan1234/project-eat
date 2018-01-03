@@ -30,6 +30,7 @@
 				<a href="#main-menu" class="main-menu js--main-menu">
 					<span class="logo">eat.ai</span>
 					<span class="ion-ios-arrow-down mobile-tablet-only rotate"></span>
+					<!--
 					<block class="popuptext bubble bubble-top cuisine-popup js--cuisine-popup">
 								<block class="bubble-main">
 									<block class="col span-1-of-2">
@@ -70,14 +71,18 @@
 									</block>
 								</block>
 							</block>
+-->
 				</a>
 				<div class="config">
 					<ul><li>
+					<span class="popup-close ion-ios-close-empty js--cuisine-close"></span>												
 					<a href="#cuisine" class="js--cuisine">
 						<span class="config-icon ion-ios-gear-outline pull-left"></span>
-						<span class="config-text">&nbsp;&nbsp;Cuisine</span>					
-						<block class="popuptext bubble bubble-top cuisine-popup js--cuisine-popup">
+						<span class="config-text">&nbsp;&nbsp;Cuisine</span>
+						<block class="popuptext cuisine-popup js--cuisine-popup bubble bubble-top">
+							
 									<block class="bubble-main">
+										
 										<block class="col span-1-of-2">
 											<label class="container">Chicken
 												<input type="checkbox" checked="checked">
@@ -118,10 +123,11 @@
 								</block>
 					</a>
 					</li><li>
+					<span class="popup-close ion-ios-close-empty js--calendar-close"></span>
 					<a href="#calendar" class="js--calendar">
 						<span class="config-icon ion-ios-calendar-outline pull-left"></span>
 						<span class="config-text">&nbsp;&nbsp;Calendar</span>					
-						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">
+						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">							
 								<block class="bubble-main">
 									<block class="row" id="date-selection">
 										<span class="col span-1-of-2"><p>From:</p>										
@@ -145,6 +151,7 @@
 							</block>
 					</a>
 					</li><li>
+					<span class="popup-close ion-ios-close-empty js--address-close"></span>	
 					<a href="#address" class="js--address">
 						<span class="config-icon ion-ios-location-outline pull-left"></span>
 						<span class="config-text">&nbsp;&nbsp;Address</span>					

@@ -98,19 +98,36 @@ $(".js--main-menu").click(function() {
 	$("#account-mobile").toggleClass("collapsed");
 })
 
-$('.js--cuisine').click(function() {	
-	$('.js--cuisine-cover').toggle();
-	$('.js--cuisine-popup').toggle();
+
+$('.js--cuisine').click(function() {		
+	$('.js--cuisine-popup').css("display", "block");
+	$('.js--cuisine-close').css("display", "block");
+})
+
+$('.js--cuisine-close').click(function() {		
+	$('.js--cuisine-popup').css("display", "none");	
+	$('.js--cuisine-close').css("display", "none");	
 })
 	
-$('.js--calendar').click(function() {	
-	$('.js--calendar-cover').toggle();
-	$('.js--calendar-popup').toggle();
+$('.js--calendar').click(function() {		
+	$('.js--calendar-popup').css("display", "block");
+	$('.js--calendar-close').css("display", "block");
 })
-$('.js--address').click(function() {	
-	$('.js--address-cover').toggle();
-	$('.js--address-popup').toggle();
+
+$('.js--calendar-close').click(function() {		
+	$('.js--calendar-popup').css("display", "none");	
+	$('.js--calendar-close').css("display", "none");	
 })
+$('.js--address').click(function() {		
+	$('.js--address-popup').css("display", "block");
+	$('.js--address-close').css("display", "block");
+})
+
+$('.js--address-close').click(function() {		
+	$('.js--address-popup').css("display", "none");	
+	$('.js--address-close').css("display", "none");	
+})
+
 $('.menu').hover(function() {
 	jQuery(".date", this).toggle();
 	jQuery(".meal-notes", this).toggle();
