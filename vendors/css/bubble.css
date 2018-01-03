@@ -1,0 +1,123 @@
+.bubble{
+	position:absolute;
+	/*border:1px solid #C4C4C4;*/
+	background-color: #ffffff;/*#F7F7F7;*/
+	border-radius: 4px;/*10px;*/
+	color:#444;
+	/*margin:50px;*/
+	text-align:center;	
+}
+.bubble-main{
+	display:inline-blockd;
+	/*padding:15px 20px;*/
+	font-size:13px;
+	text-align: left;
+	vertical-align: middle;
+}
+.bubble-main p{
+	line-height:1.7;
+}
+
+.bubble-main input {
+	height: 30px;
+	border: 1px solid #555;
+}
+.arrow-before, 
+.arrow-after{
+	position: absolute;
+	width:0;
+	height:0;
+	border:15px dashed transparent;
+	font-size:0;
+}
+.arrow-after {
+	border: 14px dashed transparent;
+}
+/*向上*/
+.bubble-top .arrow-before, 
+.bubble-top .arrow-after{
+	bottom:100%;
+	left: 50%;
+}
+.bubble-top .arrow-before{
+	/*border-bottom-style:solid;
+	border-bottom-color:#C4C4C4;*/
+	margin-left:-15px;
+}
+.bubble-top .arrow-after{
+	border-bottom-style:solid;
+	border-bottom-color:#ffffff;/*#F7F7F7;*/
+	margin-left:-14px;
+}
+/*向右*/
+.bubble-right .arrow-before, 
+.bubble-right .arrow-after{
+	left:100%;
+	top:50%;
+}
+.bubble-right .arrow-before{
+	border-left-style:solid;
+	border-left-color:#C4C4C4;
+	margin-top:-15px;
+}
+.bubble-right .arrow-after{
+	border-left-style:solid;
+	border-left-color:#ffffff;/*#F7F7F7;*/
+	margin-top:-14px;
+}
+/*向下*/
+.bubble-bottom .arrow-before, 
+.bubble-bottom .arrow-after{
+	top:100%;
+	left:50%;
+}
+.bubble-bottom .arrow-before{
+	border-top-style:solid;
+	border-top-color:#C4C4C4;
+	margin-left:-15px;
+}
+.bubble-bottom .arrow-after{
+	border-top-style:solid;
+	border-top-color:#ffffff;/*#F7F7F7;*/
+	margin-left:-14px;
+}
+/*向左*/
+.bubble-left .arrow-before, 
+.bubble-left .arrow-after{
+	right:100%;
+	top:50%;
+}
+.bubble-left .arrow-before{
+	border-right-style:solid;
+	border-right-color:#C4C4C4;
+	margin-top:-15px;
+}
+.bubble-left .arrow-after{
+	border-right-style:solid;
+	border-right-color:#ffffff;/*#F7F7F7;*/
+	margin-top:-14px;
+}
+.bubble-main .row {
+	margin-top: 10px;
+}
+.cover {
+	background-color:black;
+	width:100%;
+	height:100%;
+	display:none;
+    position:fixed;
+	top: 0px;
+	left: 0px;
+	z-index:999;
+	opacity: 0.5;
+}
+.popuptext {
+	display: none;
+	width: 100%;
+	height: 100%;;
+    padding: 25px;	
+    position: fixed;	
+	left: 0;
+	top:80px; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
+    z-index: 1000;
+}

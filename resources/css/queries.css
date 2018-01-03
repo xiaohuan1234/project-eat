@@ -1,0 +1,99 @@
+/*
+@media only screen and (max-width: 1050px) {	
+	.personalization { left: 12%; }
+	#signup-btn { display: none; }
+	#login-btn { display: none; }
+	#account-btn { display: inline-block; }
+	.section-upcoming-menu .row .span-1-of-7 { width: 120.75px; }
+}
+
+/*
+/* Mobile Portrait Styles */
+/* e.g. 414 x 736 iphone 7 plus*/
+/* mobile first, default, min width: 300px*/
+
+/* Tablet Portrait and Mobile Landscape Styles */
+/* e.g. 768 x 1024 ipad */
+@media only screen and (min-width: 415px) {
+	nav {
+		height: 160px;
+		padding-left: 30px;
+	}
+	.main-menu {
+		font-size: 120%;		
+		line-height: 100px;		
+	}
+	.main-menu .ion-ios-arrow-down {
+		left: 140px;
+		top: 1px;
+	}	
+	.popuptext {
+		top: 100px;
+	}	
+	.config {
+		top: 70px;
+	font-size: 50%;	
+	width: 450px;
+}
+	.config ul li {		
+		line-height: 40px;		
+		padding: 0 15px;
+		margin-right: 15px;
+}
+	.config-icon {
+		display: inline-block;
+		font-size: 150%;
+	}
+	#account-mobile {
+		top: 80px;
+		line-height: 60px;	
+	}
+	.account-text {
+		font-size: 20px;	
+	}
+}
+
+/* Desktop and Tablet Landscape Styles */
+/* e.g. 1440 x 900 laptop */
+@media only screen and (min-width: 769px) {
+.js--main-menu {
+  pointer-events: none;
+  cursor: default;
+}
+	.desktop-only {
+		display: inline-block; !important;
+	}
+	.mobile-tablet-only {
+		display: none;
+	}
+	nav {
+		height: 100px;		
+	}
+	
+	.config {		
+	top: 13px;
+	left: 130px;
+	width: 500px;
+}
+	.config ul li {
+		display: inline-block;
+		border: 1px solid #ccc;	
+		border-radius: 5px;				
+		padding: 0 12px;		
+}	
+	#account-mobile {
+		display: none;
+	}
+	#account-desktop {
+		display: inline-block;
+	}
+	.account-text {
+		font-size: 16px;		
+	}
+	
+	.account-icon {
+		display: none;
+	}
+
+
+}

@@ -1,0 +1,72 @@
+// variables
+
+// colors
+$white: rgba(254, 255, 250, 1);
+$grey: rgba(220, 231, 235, 1);
+$lightgrey: rgba(238, 241, 243, 1);
+$darkgrey: rgba(192, 200, 208, 1);
+$blue: rgba(34, 190, 198, 1);
+$black: rgba(48, 69, 92, 0.8);
+
+// fonts
+$sans: 'Ubuntu', sans-serif;
+$heading: 'Source Sans Pro', sans-serif;
+
+// document styles
+body {
+	position: relative;
+	width: 90%;
+	height: 100%;
+	background: $lightgrey;
+	font-family: $sans;
+	font-weight: 300;
+	color: $black;
+	margin: 5% auto;
+	
+	p {
+		margin-bottom: 1em;
+	}
+}
+
+/* radio group*/
+.radio_group {
+	position: relative;
+	padding: 0;
+	
+	// hide radio input
+	input[type="radio"] {
+		display: none;
+		
+		// style span within the label
+		& + label span { 
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+			margin-bottom: 0.5em;
+			line-height: 1.2;
+			clear: both;
+			padding-left: 1.8em;
+			
+			&:before {
+				position: absolute;
+				content: "";
+				border: 6px solid $darkgrey;
+				background: $darkgrey;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				left: 0;
+				margin-top: -2px;
+			}
+		}
+		
+		// style :checked input span
+		&:checked + label span {
+			&:before {
+				border: 6px solid $white;
+				background: $blue;
+			}
+		}
+	}
+}
