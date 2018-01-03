@@ -22,7 +22,7 @@ body,
 head {	
 	color:#444;
 	background-color:#fcfcfc;
-	font-family:'roboto',sans-serif;
+	font-family:'robpopuoto',sans-serif;
 	font-size: 13px;
 	min-width: 300px;
 }
@@ -76,26 +76,25 @@ nav {
 	background-color: #eee;
 }
 .popup-close {
-	z-index: 2002;
-	position: fixed;
-	top: 5px;
-	left: 15px;	
-	font-size: 250%;		
-	display: none;	
-}
-
-.popuptext {
-	display: none;
-	width: 100%;
-	height: 100%;
+ 	z-index: 2002;
+ 	position: fixed;
+ 	top: 5px;
+ 	left: 15px;	
+ 	font-size: 250%;		
+ 	display: none;	
+ }
+ 
+ .popuptext {
+ 	display: none;
+ 	width: 100%;
+ 	height: 100%;
     padding: 50px 20px 0px 20px;
     position: fixed;	
-	left: 0;
-	top:0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
+ 	left: 0;
+ 	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
     z-index: 1000;
-	border: 1px solid black;
-}
-
+ 	border: 1px solid black;
+ }
 #account-mobile {
 	position: fixed;
 	left: 0;
