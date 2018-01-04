@@ -23,9 +23,6 @@
 	border: 1px solid #555;
 }
 
-.bubble-main .col {
-	height: 80px;
-}
 .arrow-before, 
 .arrow-after{
 	position: absolute;

@@ -95,6 +95,15 @@ nav {
     z-index: 1000;
  	border: 1px solid black;
  }
+
+.cuisine-popup .bubble-main .col {	
+	padding: 20px 0 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.calendar-popup .bubble-main .col {	
+	padding-bottom: 15px;
+}
+
 #account-mobile {
 	position: fixed;
 	left: 0;
