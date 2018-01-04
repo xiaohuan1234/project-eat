@@ -34,16 +34,18 @@
 				<div class="config">
 					<ul>
 						<li>
-					<span class="popup-close ion-ios-close-empty js--cuisine-close"></span>												
+					<span class="popup-close ion-ios-close-empty js--cuisine-close"></span>
 					<a href="#cuisine" class="js--cuisine">
 						<span class="config-icon ion-ios-gear-outline pull-left"></span>
-						<span class="config-text">&nbsp;&nbsp;Cuisine</span>	
+						<span class="config-text">Preference</span>	
 					</a>
 							<block class="popuptext cuisine-popup js--cuisine-popup bubble bubble-top">
-							
+							<button type="button" class="reset-btn js--cuisine-reset">Reset</button>
+					
 									<block class="bubble-main">
 										
 										<block class="col span-1-of-2">
+											<p class="filter-title">Ingredient</p>
 											<label class="container">Chicken
 												<input type="checkbox" checked="checked">
 												<span class="checkmark"></span>
@@ -62,6 +64,7 @@
 											</label>
 										</block>
 										<block class="col span-1-of-2">
+											<p class="filter-title">Cuisine</p>
 											<label class="container">American
 												<input type="checkbox" checked="checked">
 												<span class="checkmark"></span>
@@ -79,14 +82,16 @@
 												<span class="checkmark"></span>
 											</label>
 										</block>
+										<button type="button" class="save-btn js--cuisine-save">Save</button>
 									</block>
 								</block>
+					
 					</li>
 					<li>
 						<span class="popup-close ion-ios-close-empty js--calendar-close"></span>
 						<a href="#calendar" class="js--calendar">
 							<span class="config-icon ion-ios-calendar-outline pull-left"></span>
-							<span class="config-text">&nbsp;&nbsp;Calendar</span>
+							<span class="config-text">Calendar</span>
 						</a>
 						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">
 							<block class="bubble-main">							
@@ -115,7 +120,7 @@
 					<span class="popup-close ion-ios-close-empty js--address-close"></span>	
 					<a href="#address" class="js--address">
 						<span class="config-icon ion-ios-location-outline pull-left"></span>
-						<span class="config-text">&nbsp;&nbsp;Address</span>					
+						<span class="config-text">Address</span>					
 						<block class="popuptext address-popup js--address-popup bubble bubble-top">
 								<block class="bubble-main">
 									<block class="address-info">

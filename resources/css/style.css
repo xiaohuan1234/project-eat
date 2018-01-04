@@ -70,17 +70,17 @@ nav {
 	border: 1px solid #ccc;	
 	border-radius: 5px;
 	margin-left: 0px;
-	margin-right: 15px;		
+	margin-right: 7px;		
 	line-height: 30px;
-	padding: 0 10px;
+	padding: 0 7px;
 	background-color: #eee;
 }
 .popup-close {
  	z-index: 2002;
  	position: fixed;
- 	top: 5px;
- 	left: 10px;	
- 	font-size: 250%;		
+ 	top: 8px;
+ 	left: 25px;	
+ 	font-size: 350%;		
  	display: none;	
  }
  
@@ -88,7 +88,7 @@ nav {
  	display: none;
  	width: 100%;
  	height: 100%;
-    padding: 40px;
+    
     position: fixed;	
  	left: 0;
  	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
@@ -96,11 +96,13 @@ nav {
  }
 
 .cuisine-popup .bubble-main .col {	
-	padding: 10px 0 5px 0;
-	border-bottom: 1px solid #ccc;
+	padding: 15px;	
+}
+.cuisine-popup .bubble-main .col:first-of-type {
+	margin-top: 50px;	
 }
 .calendar-popup .bubble-main .col {	
-	padding-bottom: 15px;
+	padding-bottom: 15px;	
 }
 .calendar-popup .bubble-main .col p {
 	margin-bottom: 5px;
@@ -119,6 +121,34 @@ nav {
 	top: 140px;
 	right: 30px;
 }
+
+.reset-btn {
+	color: green;
+	display: none;
+	z-index: 2000;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 130%;
+	border: 0px;
+	background-color: transparent;
+}
+.save-btn {
+	color: white;
+	background-color: orange;
+	width: 90%;
+	height: 40px;
+	display: none;
+	z-index: 3000;
+	font-size: 115%;
+	border: none;	
+	padding: 10px 0;	
+	border-radius: 5px;	
+	position: fixed;
+	left: 5%;
+	bottom: 3%;
+}
+
 #account-mobile {
 	position: fixed;
 	left: 0;
