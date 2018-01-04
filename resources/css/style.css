@@ -92,8 +92,7 @@ nav {
     position: fixed;	
  	left: 0;
  	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
-    z-index: 1000;
- 	border: 1px solid black;
+    z-index: 1000; 	
  }
 
 .cuisine-popup .bubble-main .col {	
@@ -112,9 +111,14 @@ nav {
 
 .address-popup .bubble-main input {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
+.address-info label {
+	position: absolute;
+	top: 140px;
+	right: 30px;
+}
 #account-mobile {
 	position: fixed;
 	left: 0;
