@@ -81,7 +81,8 @@ nav {
  	top: 8px;
  	left: 25px;	
  	font-size: 350%;		
- 	display: none;	
+ 	display: none;
+	border: none;
  }
  
  .popuptext {
@@ -102,7 +103,7 @@ nav {
 	margin-top: 50px;	
 }
 .calendar-popup .bubble-main .col {	
-	padding: 15px;	
+	padding: 10px;	
 }
 .calendar-popup .bubble-main .col:first-of-type {
 	margin-top: 50px;	
@@ -115,20 +116,13 @@ nav {
 }
 
 .address-popup .bubble-main input {
-	width: 100%;
-	margin-bottom: 40px;
+	width: 90%;
+	margin-bottom: 20px;
 }
-.address-info {
-	height: 80px;
-	padding: 5px;
-	margin-top: 10px;
-	
-}
-
 .address-info label {
 	position: absolute;
-	top: 140px;
-	right: 30px;
+	top: -12px;
+	right: -15px;
 }
 
 .reset-btn {
@@ -149,13 +143,29 @@ nav {
 	height: 40px;
 	display: none;
 	z-index: 3000;
-	font-size: 115%;
+	font-size: 160%;
 	border: none;	
 	padding: 10px 0;	
 	border-radius: 5px;	
 	position: fixed;
 	left: 5%;
 	bottom: 3%;
+	font-weight: bold;
+}
+.popup-close {
+	border: none;
+	background-color: transparent;
+}
+.bubble-main .popup-close {
+	margin-bottom: 50px;
+}
+.bubble-main .container {
+	margin: 10px;
+}
+.address-info {
+	position: relative;
+	top: 80px;
+	left: 5%;
 }
 
 #account-mobile {

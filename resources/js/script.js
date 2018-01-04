@@ -135,6 +135,7 @@ $('.js--address').click(function() {
 $('.js--address-close').click(function() {		
 	$('.js--address-popup').css("display", "none");	
 	$('.js--address-close').css("display", "none");	
+	$('.js--address-save').css("display", "none");	
 })
 
 $('.menu').hover(function() {
