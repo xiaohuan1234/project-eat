@@ -29,57 +29,17 @@
 			<nav>
 				<a href="#main-menu" class="main-menu js--main-menu">
 					<span class="logo">eat.ai</span>
-					<span class="ion-ios-arrow-down mobile-tablet-only rotate"></span>
-					<!--
-					<block class="popuptext bubble bubble-top cuisine-popup js--cuisine-popup">
-								<block class="bubble-main">
-									<block class="col span-1-of-2">
-										<label class="container">Chicken
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Beef
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Seafood
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Pork
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-									</block>
-									<block class="col span-1-of-2">
-										<label class="container">American
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Mexican
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Chinese
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-										<label class="container">Indian
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-										</label>
-									</block>
-								</block>
-							</block>
--->
+					<span class="ion-ios-arrow-down mobile-tablet-only rotate"></span>		
 				</a>
 				<div class="config">
-					<ul><li>
+					<ul>
+						<li>
 					<span class="popup-close ion-ios-close-empty js--cuisine-close"></span>												
 					<a href="#cuisine" class="js--cuisine">
 						<span class="config-icon ion-ios-gear-outline pull-left"></span>
-						<span class="config-text">&nbsp;&nbsp;Cuisine</span>
-						<block class="popuptext cuisine-popup js--cuisine-popup bubble bubble-top">
+						<span class="config-text">&nbsp;&nbsp;Cuisine</span>	
+					</a>
+							<block class="popuptext cuisine-popup js--cuisine-popup bubble bubble-top">
 							
 									<block class="bubble-main">
 										
@@ -121,36 +81,36 @@
 										</block>
 									</block>
 								</block>
-					</a>
-					</li><li>
-					<span class="popup-close ion-ios-close-empty js--calendar-close"></span>
-					<a href="#calendar" class="js--calendar">
-						<span class="config-icon ion-ios-calendar-outline pull-left"></span>
-						<span class="config-text">&nbsp;&nbsp;Calendar</span>					
-						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">							
-								<block class="bubble-main">
-									<block class="row" id="date-selection">
-										<span class="col span-1-of-2"><p>From:</p>										
-											<input type="date" id="theDate">
-										</span>
-										<span class="col span-1-of-2"><p>To:</p> 										
-											<input type="date" id="theTomorrow">
-										</span>
-									</block>
-									<label class="container row">
-										Lunch (delivered by 12:00pm)
-										<input type="checkbox" checked="checked">
-										<span class="checkmark"></span>
-									</label>															
-									<label class="container row">
-										Dinner (delivered by 6:00pm)
-										<input type="checkbox" checked="checked">
-										<span class="checkmark"></span>
-									</label>						
-								</block>
+					</li>
+					<li>
+						<span class="popup-close ion-ios-close-empty js--calendar-close"></span>
+						<a href="#calendar" class="js--calendar">
+							<span class="config-icon ion-ios-calendar-outline pull-left"></span>
+							<span class="config-text">&nbsp;&nbsp;Calendar</span>
+						</a>
+						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">
+							<block class="bubble-main">							
+								<span class="col span-1-of-2"><p>From:</p>
+									<input type="date" id="theDate">
+								</span>
+								<span class="col span-1-of-2"><p>To:</p>
+									<input type="date" id="theTomorrow">
+								</span>
+								<label class="container"></label>
+								<label class="container">
+									Lunch (delivered by 12:00pm)
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>					
+								<label class="container">
+									Dinner (delivered by 6:00pm)
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>								
 							</block>
-					</a>
-					</li><li>
+						</block>
+					</li>
+						<li>
 					<span class="popup-close ion-ios-close-empty js--address-close"></span>	
 					<a href="#address" class="js--address">
 						<span class="config-icon ion-ios-location-outline pull-left"></span>

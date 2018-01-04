@@ -79,7 +79,7 @@ nav {
  	z-index: 2002;
  	position: fixed;
  	top: 5px;
- 	left: 15px;	
+ 	left: 10px;	
  	font-size: 250%;		
  	display: none;	
  }
@@ -88,7 +88,7 @@ nav {
  	display: none;
  	width: 100%;
  	height: 100%;
-    padding: 50px 20px 0px 20px;
+    padding: 40px;
     position: fixed;	
  	left: 0;
  	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
@@ -141,7 +141,6 @@ nav {
 		float: right;
 		padding: 0 14px;
 	}
-
 a:hover,
 a:link,
 a:visited,

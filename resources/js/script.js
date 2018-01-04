@@ -101,23 +101,29 @@ $(".js--main-menu").click(function() {
 
 $('.js--cuisine').click(function() {		
 	$('.js--cuisine-popup').css("display", "block");
-	$('.js--cuisine-close').css("display", "block");
+	$('.js--cuisine-close').css("display", "block");	
+	
 })
 
 $('.js--cuisine-close').click(function() {		
 	$('.js--cuisine-popup').css("display", "none");	
-	$('.js--cuisine-close').css("display", "none");	
+	$('.js--cuisine-close').css("display", "none");
 })
 	
 $('.js--calendar').click(function() {		
 	$('.js--calendar-popup').css("display", "block");
 	$('.js--calendar-close').css("display", "block");
+	$('.js--calendar').css("display", "none");
+	$('.js--main-menu').css("display", "none");
 })
 
 $('.js--calendar-close').click(function() {		
 	$('.js--calendar-popup').css("display", "none");	
-	$('.js--calendar-close').css("display", "none");	
+	$('.js--calendar-close').css("display", "none");
+	$('.js--calendar').css("display", "block");
+	$('.js--main-menu').css("display", "block");
 })
+
 $('.js--address').click(function() {		
 	$('.js--address-popup').css("display", "block");
 	$('.js--address-close').css("display", "block");

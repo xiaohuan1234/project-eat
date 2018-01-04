@@ -1,7 +1,7 @@
 /* The container */
 .container {
     display: block;
-    position: relative;
+    position: relative;	
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
@@ -14,7 +14,7 @@
 
 /* Hide the browser's default checkbox */
 .container input {
-    position: absolute;
+    position: absolute;	
     opacity: 0;
 }
 
@@ -60,6 +60,5 @@
 	font-size: 120%;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }

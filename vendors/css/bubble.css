@@ -12,7 +12,7 @@
 	/*padding:15px 20px;*/
 	font-size:13px;
 	text-align: left;
-	vertical-align: middle;
+	vertical-align: middle;	
 }
 .bubble-main p{
 	line-height:1.7;
@@ -21,6 +21,10 @@
 .bubble-main input {
 	height: 30px;
 	border: 1px solid #555;
+}
+
+.bubble-main .col {
+	height: 80px;
 }
 .arrow-before, 
 .arrow-after{
