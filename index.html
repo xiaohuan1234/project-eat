@@ -90,7 +90,8 @@
 						</a>
 						<block class="popuptext calendar-popup js--calendar-popup bubble bubble-top">
 							<block class="bubble-main">							
-								<span class="col span-1-of-2"><p>From:</p>
+								<span class="col span-1-of-2">
+									<p>From:</p>
 									<input type="date" id="theDate">
 								</span>
 								<span class="col span-1-of-2"><p>To:</p>
@@ -117,17 +118,19 @@
 						<span class="config-text">&nbsp;&nbsp;Address</span>					
 						<block class="popuptext address-popup js--address-popup bubble bubble-top">
 								<block class="bubble-main">
-									<p>Lunch address:</p>								
+									<block class="address-info">
+									<p>Lunch address:</p>
 									<input type="text" id="lunch_address">
-									<block id="dinner-address-block">
-										<p>Dinner address:</p>
-										<input type="text" id="dinner_address">
+									</block>
+									<block class="address-info">
+										<p>Dinner address:
 										<label class="container">
 											same as lunch
 											<input type="checkbox" checked="checked">
 											<span class="checkmark"></span>
-										</label>
-									</block>
+										</label></p>
+										<input type="text" id="dinner_address">
+									</block>									
 								</block>
 							</block>	
 					</a>
