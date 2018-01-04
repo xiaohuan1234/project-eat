@@ -102,7 +102,10 @@ nav {
 	margin-top: 50px;	
 }
 .calendar-popup .bubble-main .col {	
-	padding-bottom: 15px;	
+	padding: 15px;	
+}
+.calendar-popup .bubble-main .col:first-of-type {
+	margin-top: 50px;	
 }
 .calendar-popup .bubble-main .col p {
 	margin-bottom: 5px;
@@ -114,6 +117,12 @@ nav {
 .address-popup .bubble-main input {
 	width: 100%;
 	margin-bottom: 40px;
+}
+.address-info {
+	height: 80px;
+	padding: 5px;
+	margin-top: 10px;
+	
 }
 
 .address-info label {

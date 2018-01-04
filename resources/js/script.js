@@ -116,22 +116,20 @@ $('.js--cuisine-close').click(function() {
 })
 	
 $('.js--calendar').click(function() {		
-	$('.js--calendar-popup').css("display", "block");
-	$('.js--calendar-close').css("display", "block");
-	$('.js--calendar').css("display", "none");
-	$('.js--main-menu').css("display", "none");
+	$('.js--calendar-popup').slideToggle();
+	$('.js--calendar-close').slideToggle();
+	$('.js--calendar-save').slideToggle();
 })
 
 $('.js--calendar-close').click(function() {		
 	$('.js--calendar-popup').css("display", "none");	
-	$('.js--calendar-close').css("display", "none");
-	$('.js--calendar').css("display", "block");
-	$('.js--main-menu').css("display", "block");
+	$('.js--calendar-close').css("display", "none");	
 })
 
 $('.js--address').click(function() {		
-	$('.js--address-popup').css("display", "block");
-	$('.js--address-close').css("display", "block");
+	$('.js--address-popup').slideToggle();
+	$('.js--address-close').slideToggle();
+	$('.js--address-save').slideToggle();
 })
 
 $('.js--address-close').click(function() {		
