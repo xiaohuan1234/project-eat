@@ -94,15 +94,7 @@ nav {
  	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
     z-index: 1000; 	
  }
-.calendar-popup .bubble-main .col {	
-	padding: 10px;	
-}
-.calendar-popup .bubble-main .col:first-of-type {
-	margin-top: 50px;	
-}
-.calendar-popup .bubble-main .col p {
-	margin-bottom: 5px;
-}
+
 .calendar-popup .bubble-main .col input {
 	width: 100%;	
 }

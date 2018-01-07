@@ -109,13 +109,10 @@ $('.js--cuisine-close').click(function() {
 	
 $('.js--calendar').click(function() {		
 	$('.js--calendar-popup').slideToggle();
-	$('.js--calendar-close').slideToggle();
-	$('.js--calendar-save').slideToggle();
 })
 
 $('.js--calendar-close').click(function() {		
 	$('.js--calendar-popup').css("display", "none");	
-	$('.js--calendar-close').css("display", "none");	
 })
 
 $('.js--address').click(function() {		
