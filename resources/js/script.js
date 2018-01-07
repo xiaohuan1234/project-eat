@@ -100,19 +100,11 @@ $(".js--main-menu").click(function() {
 
 
 $('.js--cuisine').click(function() {		
-	/*$('.js--cuisine-popup').css("display", "block");
-	$('.js--cuisine-close').css("display", "block");	*/
-	$('.js--cuisine-popup').slideToggle();
-	$('.js--cuisine-close').slideToggle();
-	$('.js--cuisine-reset').slideToggle();
-	$('.js--cuisine-save').slideToggle();
+	$('.js--cuisine-popup').slideToggle();			
 })
 
 $('.js--cuisine-close').click(function() {		
-	$('.js--cuisine-popup').css("display", "none");	
-	$('.js--cuisine-close').css("display", "none");
-	$('.js--cuisine-reset').css("display", "none");
-	$('.js--cuisine-save').css("display", "none");
+	$('.js--cuisine-popup').css("display", "none");				
 })
 	
 $('.js--calendar').click(function() {		

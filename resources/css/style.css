@@ -80,8 +80,7 @@ nav {
  	position: fixed;
  	top: 8px;
  	left: 25px;	
- 	font-size: 350%;		
- 	display: none;
+ 	font-size: 350%;		 	
 	border: none;
  }
  
@@ -95,13 +94,6 @@ nav {
  	top: 0; /*parent text height 14px, parent padding 8px, arrow height 15px*/	
     z-index: 1000; 	
  }
-
-.cuisine-popup .bubble-main .col {	
-	padding: 15px;	
-}
-.cuisine-popup .bubble-main .col:first-of-type {
-	margin-top: 50px;	
-}
 .calendar-popup .bubble-main .col {	
 	padding: 10px;	
 }
@@ -126,11 +118,10 @@ nav {
 }
 
 .reset-btn {
-	color: green;
-	display: none;
+	color: green;	
 	z-index: 2000;
 	position: absolute;
-	right: 20px;
+	right: 12px;
 	top: 20px;
 	font-size: 130%;
 	border: 0px;
@@ -140,8 +131,7 @@ nav {
 	color: white;
 	background-color: orange;
 	width: 90%;
-	height: 40px;
-	display: none;
+	height: 40px;	
 	z-index: 3000;
 	font-size: 160%;
 	border: none;	
@@ -152,15 +142,12 @@ nav {
 	bottom: 3%;
 	font-weight: bold;
 }
-.popup-close {
-	border: none;
-	background-color: transparent;
-}
-.bubble-main .popup-close {
-	margin-bottom: 50px;
-}
 .bubble-main .container {
 	margin: 10px;
+}
+.filter-title {
+	padding-bottom: 10px;
+	font-size: 120%;	
 }
 .address-info {
 	position: relative;
