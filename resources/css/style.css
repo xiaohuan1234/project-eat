@@ -99,9 +99,17 @@ nav {
 	width: 100%;	
 }
 
-.address-popup .bubble-main input {
+.address-info input {
 	width: 90%;
-	margin-bottom: 20px;
+	margin-bottom: 0px;	
+}
+.address-info p,
+.address-info input {
+	margin-left: 5%;
+}
+.bubble-main block {
+	position: relative;
+	padding: 10px;
 }
 .address-info label {
 	position: absolute;
@@ -140,11 +148,6 @@ nav {
 .filter-title {
 	padding-bottom: 10px;
 	font-size: 120%;	
-}
-.address-info {
-	position: relative;
-	top: 80px;
-	left: 5%;
 }
 
 #account-mobile {
