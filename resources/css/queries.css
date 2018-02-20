@@ -27,13 +27,20 @@
 		left: 140px;
 		top: 1px;
 	}	
-	.popuptext {
-		top: 100px;
-	}	
+	.bubble-header {
+		height: 80px;
+	}
+	.bubble-main {
+		top: 80px;
+	}
+	.bubble-main .col {
+	border-bottom: 0px;
+	}
+	
 	.config {
 		top: 70px;
-	font-size: 50%;	
-	width: 450px;
+		font-size: 50%;	
+		width: 450px;
 }
 	.config ul li {		
 		line-height: 40px;		

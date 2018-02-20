@@ -54,9 +54,11 @@
 	width: 49.2%;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 415 PIXELS */
 
-@media only screen and (max-width: 480px) {
+/* 415 px to be consistent with the tablet responsive threshold */
+
+@media only screen and (max-width: 415px) {
 	.span-1-of-2,
 	.span-2-of-2 {
 		width: 100%; 
