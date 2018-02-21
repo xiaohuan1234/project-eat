@@ -95,7 +95,7 @@ $(window).resize(function(){
 $(".js--main-menu").click(function() {	
 	$(".rotate").toggleClass("down");
 	$("#account-mobile").slideToggle(500);
-	$("#account-mobile").toggleClass("collapsed");
+	$("#account-mobile").toggleClass("collapsed");	
 })
 
 

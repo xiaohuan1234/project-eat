@@ -152,13 +152,14 @@ nav {
 }
 
 #account-mobile {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 70px;
 	line-height: 40px;
 	width: 100%;
 	background-color: #fcfcfc;
-	display: none;	
+	display: none;
+	z-index: 1001;
 }
 #account-mobile ul {
 	margin: 0px 15px;
@@ -176,7 +177,7 @@ nav {
 	vertical-align: middle;
 }
 #account-desktop {
-	position: fixed;
+	position: absolute;
 		
 		top: 10px;		
 		left: auto;
