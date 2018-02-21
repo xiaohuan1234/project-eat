@@ -80,7 +80,7 @@
 	.config {		
 	top: 13px;
 	left: 130px;
-	width: 500px;
+	/*width: 500px;*/
 }
 	.config ul li {
 		display: inline-block;

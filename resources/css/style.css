@@ -101,12 +101,12 @@ nav {
 }
 
 .address-info input {
-	width: 90%;
-	margin-bottom: 0px;	
+	width: 80%;
+	margin-bottom: 15px;	
 }
 .address-info p,
 .address-info input {
-	margin-left: 5%;
+	margin-left: 7%;
 }
 .bubble-main block {
 	position: relative;
@@ -115,7 +115,10 @@ nav {
 .address-info label {
 	position: absolute;
 	top: -12px;
-	right: -15px;
+	right: -15px;	
+}
+#same-as-lunch {
+	width: 150px;
 }
 
 .reset-btn {
