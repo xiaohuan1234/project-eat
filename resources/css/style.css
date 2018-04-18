@@ -38,8 +38,8 @@ nav {
 }
 
 .main-menu .ion-ios-arrow-down {
-	position: fixed;
-	left: 200px;
+	position: relative;
+	left: 10px;
 	top: 2px;
 }
 
