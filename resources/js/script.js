@@ -18,11 +18,17 @@ $(document).ready(function() {
 	});
 
 // calendar	
-var today = new Date();
-var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+var fromDate = new Date();
+// default trial period is one month, hence 30    
+var toDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000 * 30);
 
-$("#theDate").val(getFormattedDate(today));
-$("#theTomorrow").val(getFormattedDate(tomorrow));
+$('.datepick').each(function(){
+    $(this).datepicker();
+});
+    
+$('#fromDate').datepicker('setDate', fromDate);
+    
+$('#toDate').datepicker('setDate', toDate);
 
 
 $('h2').click(

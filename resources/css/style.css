@@ -117,6 +117,10 @@ nav {
 	top: -12px;
 	right: -15px;	
 }
+
+#fromDate {
+    border: 1px solid #ccc;	
+}
 #same-as-lunch {
 	width: 150px;
 }

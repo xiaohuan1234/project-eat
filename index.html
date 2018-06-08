@@ -34,7 +34,8 @@
 
 	</head>
 	
-	<body>	
+	<body>
+        
 		<header>			
 			<nav>
 				<a href="#main-menu" class="main-menu js--main-menu">
@@ -166,19 +167,22 @@
 							<span class="config-text">Calendar</span>
 						</a>
 						<block class="popuptext calendar-popup js--calendar-popup bubble">
+                            
 							<block class="bubble-header">
 								<span class="popup-close ion-ios-close-empty js--calendar-close"></span>
 								<button type="button" class="reset-btn js--cuisine-reset">Reset</button>
 							</block>
-							<block class="bubble-main">							
-								<span class="col span-1-of-2">
-									<p>From:</p>
-									<input type="date" id="theDate">
+							<block class="bubble-main">		
+                                <!--
+                                  --> 
+                                <label class="container">
+								<span class="col span-1-of-2">                                   
+									<p>From:<input class="datepick" id="fromDate" style="border: 1px solid #ccc;"></p>
+									
 								</span>
-								<span class="col span-1-of-2"><p>To:</p>
-									<input type="date" id="theTomorrow">
+								<span class="col span-1-of-2"><p>To:<input class="datepick datepickwindow" id="toDate"></p>
 								</span>
-								<label class="container"></label>
+								</label>
 								<label class="container">
 									Lunch (delivered by 12:00pm)
 									<input type="checkbox" checked="checked">
@@ -229,13 +233,12 @@
 				</div>
 			</nav>
 		</header>
-		<section>
-		</section>
-		
+		    
 		<!-- vendor's js scripts-->		
 		<!-- jquery scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css"/> 
 		<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=places&language=en-AU"></script>		
 		<script src="vendors/js/jquery.waypoints.min.js"></script>
 		<!-- own js scripts-->
