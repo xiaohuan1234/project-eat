@@ -96,9 +96,6 @@ nav {
     z-index: 1000; 	
  }
 
-.calendar-popup .bubble-main .col input {
-	width: 100%;	
-}
 
 .address-info input {
 	width: 80%;
@@ -118,9 +115,10 @@ nav {
 	right: -15px;	
 }
 
-#fromDate {
-    border: 1px solid #ccc;	
+.container .datepick {
+    opacity: 1;    
 }
+
 #same-as-lunch {
 	width: 150px;
 }
