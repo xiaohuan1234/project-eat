@@ -115,8 +115,14 @@ nav {
 	right: -15px;	
 }
 
-.container .datepick {
-    opacity: 1;    
+.container .datepick-type {
+    background-color: red;
+    margin: 20px 2px 0px 10px;
+    
+}
+.container .col .datepick {
+    opacity: 1;   
+    width: 100%;
 }
 
 #same-as-lunch {

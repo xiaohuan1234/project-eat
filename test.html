@@ -1,14 +1,30 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/bubble.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">	
+    </head>
 <body>
-<p>Date: <input type="text" id="datepicker"></p>       
+<block class="bubble-main">    
+<span class="row">
+    <span class="col span-1-of-15">From:</span>
+    <span class="col span-1-of-3"><input class="datepick"></span>
+    
+    <span class="col span-1-of-15">To:</span>
+    <span class="col span-1-of-3"><input class="datepick"></span>
+</span>
+</block>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css" />    
   <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+      
+$('.datepick').each(function(){
+    $(this).datepicker();
+});
+      
+
   </script>
 
 </body>
