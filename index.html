@@ -31,7 +31,14 @@
 		<meta name="msapplication-TileColor" content="#ff9900">
 		<meta name="msapplication-config" content="/resources/favicons5/browserconfig.xml">
 		<meta name="theme-color" content="#ff9900">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css"/> 
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+		<!-- own js scripts-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjfTfgJdRah5wXvVj8U7fH4ACoqKry9HI&libraries=places&callback=initAutocomplete"
+        async defer></script>
+		<script src="resources/js/script.js"></script>
 	</head>
 	
 	<body>
@@ -173,8 +180,6 @@
 								<button type="button" class="reset-btn js--cuisine-reset">Reset</button>
 							</block>
 							<block class="bubble-main">		
-                                <!--
-                                  --> 
                                 <span class="row">
                                     <span class="col span-1-of-15">From:</span>
                                     <span class="col span-1-of-3">
@@ -214,7 +219,8 @@
 							<block class="bubble-main">
 								<block class="address-info">
 									<p>Lunch address:</p>
-									<input type="text" id="lunch_address">
+                                    <input id="lunch-address" placeholder="Enter your address"
+             onFocus="geolocate()" type="text">
 								</block>
 								<block class="address-info">
 									<p>Dinner address:
@@ -235,15 +241,5 @@
 				</div>
 			</nav>
 		</header>
-		    
-		<!-- vendor's js scripts-->		
-		<!-- jquery scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>		
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/smoothness/jquery-ui.css"/> 
-          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-
-		<script src="vendors/js/jquery.waypoints.min.js"></script>
-		<!-- own js scripts-->
-		<script src="resources/js/script.js"></script>
+        
 	</body>

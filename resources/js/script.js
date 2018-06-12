@@ -1,3 +1,34 @@
+function initAutocomplete() {
+    // Create the autocomplete object, restricting the search to geographical
+    // location types.
+    autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */(document.getElementById('lunch-address')),
+        {types: ['geocode']});
+
+    // When the user selects an address from the dropdown, populate the address
+    // fields in the form.
+    autocomplete.addListener('place_changed', fillInAddress);
+    $("#dinner_address").val($("#lunch_address").val());
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+                center: geolocation,
+                radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        }
+      }
+      
 function getFormattedDate (date) {
     return date.getFullYear()
         + "-"
@@ -10,12 +41,13 @@ $(document).ready(function() {
 	
 	
 // address
+    /*
 	var autocomplete_lunch = new google.maps.places.Autocomplete($("#lunch_address")[0], {});
 	google.maps.event.addListener(autocomplete_lunch, 'place_changed', function() {
 		var place = autocomplete_lunch.getPlace();
 		console.log(place.address_components);
 		$("#dinner_address").val($("#lunch_address").val());
-	});
+	});*/
 
 // calendar	
 var fromDate = new Date();
