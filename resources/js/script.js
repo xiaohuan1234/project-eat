@@ -7,9 +7,17 @@ function initAutocomplete() {
 
     // When the user selects an address from the dropdown, populate the address
     // fields in the form.
-    autocomplete.addListener('place_changed', fillInAddress);
-    $("#dinner_address").val($("#lunch_address").val());
+    autocomplete.addListener('place_changed', fillInAddress);    
 }
+
+ function fillInAddress() {
+     var lunch_address = document.getElementById('lunch-address'),
+         dinner_address = document.getElementById('dinner-address'),
+         same_as_lunch = document.getElementById('same-as-lunch-value');
+     if(same_as_lunch.checked) {
+         dinner_address.value=lunch_address.value;
+     }
+ }
 
 // Bias the autocomplete object to the user's geographical location,
 // as supplied by the browser's 'navigator.geolocation' object.
