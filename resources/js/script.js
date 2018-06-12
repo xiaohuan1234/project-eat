@@ -1,3 +1,8 @@
+var on_address_option_change = function()
+{
+    console.log("option checked");
+}
+
 function initAutocomplete() {
     // Create the autocomplete object, restricting the search to geographical
     // location types.
@@ -46,7 +51,7 @@ function getFormattedDate (date) {
 }
 
 $(document).ready(function() {	
-	
+	document.getElementById('same-as-lunch-value').onclick = on_address_option_change;
 	
 // address
     /*
@@ -174,5 +179,20 @@ $('.menu').hover(function() {
 	jQuery(".meal-notes", this).toggle();
 	
 })
+    
+$('#same-as-lunch-value').click(function() {		        
+    var lunch_address = document.getElementById('lunch-address'),
+        dinner_address = document.getElementById('dinner-address'),
+        same_as_lunch = document.getElementById('same-as-lunch-value');
+    
+    if(same_as_lunch.checked) {
+        dinner_address.value = lunch_address.value;
+    }
+    else {
+        dinner_address.value="";
+        dinner_address.placeholder="Enter your address";
+        autocomplete = new google.maps.places.Autocomplete(dinner_address, {types: ['geocode']});
+    }
+})    
 
 })
