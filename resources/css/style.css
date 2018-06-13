@@ -97,22 +97,24 @@ nav {
  }
 
 
-.address-info input {
-	width: 80%;
-	margin-bottom: 15px;	
-}
-.address-info p,
-.address-info input {
-	margin-left: 7%;
-}
+
 .bubble-main block {
 	position: relative;
 	padding: 10px;
 }
+
+.address-info input {
+	width: 80%;
+	margin-bottom: 15px;	
+}
+
+.address-info input {
+	position: relative;
+	left: 50px;
+}
 .address-info label {
-	position: absolute;
-	top: -12px;
-	right: -15px;	
+	position: relative;
+	left: 20px;
 }
 
 .container .datepick-type {
